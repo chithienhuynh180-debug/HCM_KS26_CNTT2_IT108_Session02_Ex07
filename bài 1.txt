@@ -1,7 +1,4 @@
-Phần 1
-- Lỗi 1 : Lưu và ổ C, giúp máy tính truy cập file nhanh nhất
-- Lỗi 2 : Đặt tên thư mục có khoảng trắng để dễ đọc
-- Lỗi 3 : Lưu vào thư mục Windows\System32 để các file code được hệ điều hành "bảo vệ" tối đa.
+phần 1
+- Đường dẫn của Bình là đường dẫn tuyệt đối, ghi cứng từ ổ C và tên user Binh-K26. Máy thầy không có ổ C hoặc tên user khác nên không tìm thấy ảnh.
 Phần 2
-D:\hcm_ks26_cntt2\it108\session_02\bai1.py.
-
+- sửa thành đường dẫn tương đối: òng sửa: image_path = "./assets/logo.png"               

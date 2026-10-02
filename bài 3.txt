@@ -1,0 +1,31 @@
+ràng buộc & bẫy dữ liệu
+
+- máy sẽ bị màn hình xanh rồi tự khởi động lại, mất dữ liệu chưa lưu. Lý do là System là nhân hệ điều hành, thiếu nó máy không thể chạy.
+- Input: người dùng bấm mở ứng dụng, Shell gọi hệ điều hành bằng system call. Dữ               liệu đầu vào là file chương trình nằm trên ổ cứng.
+
+Process: Kernel kiểm tra quyền, tạo tiến trình mới và cấp phát vùng nhớ trong RAM. Loader đọc file từ ổ cứng rồi chép vào RAM. Scheduler xếp tiến trình vào hàng đợi để CPU thực thi.
+
+Output: chương trình nằm trong RAM, CPU chạy lệnh và cửa sổ ứng dụng hiện lên màn hình.
+
+Yêu cầu đầu ra
+- giật lag là do CPU phải chia nhỏ thời gian cho quá nhiều tiến trình, cộng với RAM đầy nên máy phải dùng ổ cứng thay RAM. 
+- [Tầng 1] USER
+Bấm đúp biểu tượng Chrome
+        |
+        v
+[Tầng 2] SHELL
+Nhận yêu cầu, gọi hệ điều hành bằng system call
+        |
+        v
+[Tầng 3] KERNEL
+Tạo tiến trình, lập lịch CPU
+Cấp phát RAM
+Tìm và đọc file chrome.exe
+        |
+        v
+[Tầng 4] DEVICE DRIVER
+Điều khiển ổ đĩa, card đồ họa
+        |
+        v
+[Tầng 5] HARDWARE
+Storage -> RAM -> CPU -> Màn hình
