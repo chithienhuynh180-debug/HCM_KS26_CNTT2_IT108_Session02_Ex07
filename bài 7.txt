@@ -1,0 +1,19 @@
+mình chọn kiểu kebab-case (chữ thường, nối bằng dấu gạch ngang) cho cả 4 file.
+
+phần 1: lỗi sai
+
+1. poster Phim Hài.jpg: có khoảng trắng, có dấu tiếng việt, viết hoa đầu mỗi từ nên không nhất quán. tên cũng chung chung, không biết phim hài nào.
+
+2. avengers_end_game_final_2.PNG: đuôi file viết hoa, chữ đầu viết hoa còn phía sau viết thường.
+3. lậtMặt6-Bảnchuẩn.jpeg: có dấu, các từ dính liền nhau, hoa thường lộn xộn, vừa dùng gạch ngang vừa viết liền. 
+
+4.icon tài khoản.SVG : có khoảng trắng, có dấu, đuôi viết hoa.
+
+phần 2: tên sau khi sửa
+
+1. poster-phim-hai.jpg
+2. avengers-endgame-poster.png
+3. lat-mat-6-poster.jpg
+4. icon-tai-khoan.svg
+
+mình thống nhất đuôi file viết thường và dùng .jpg cho cả hai file ảnh jpeg. các hậu tố như "final_2" hay "Bảnchuẩn" bỏ luôn vì phiên bản nên quản lý riêng, ko nhét vào tên file.S
